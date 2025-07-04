@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sticky Navbar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav role="navigation" aria-label="Main Navigation">
+    <div class="logo">MyLogo</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" style="
+  background: url('https://picsum.photos/1200/800') center/cover no-repeat;
+  color: #fff;
+  position: relative;
+  min-height: 100vh;
+  padding: 100px 40px;
+">
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  "></div>
+  <div style="
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 100px;
+  ">
+    <h2 style="font-size: 3rem; margin-bottom: 20px;">Welcome to Our Site</h2>
+    <p style="font-size: 1.2rem;">We build modern websites that stand out.</p>
+  </div>
+</section>
+
+
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="about-img">
+      <img src="https://picsum.photos/500/300" alt="About Us" />
+    </div>
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        We are passionate developers dedicated to delivering high-quality web solutions.
+        Our mission is to blend creativity and technology to help businesses shine online.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services-section">
+    <h2>What We Do</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+        <h3>Web Design</h3>
+        <p>Creative and modern UI design tailored to your brand.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-code"></i></div>
+        <h3>Development</h3>
+        <p>Robust backend and frontend development using modern stacks.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>SEO Optimization</h3>
+        <p>Boost your website's visibility and ranking on search engines.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+        <h3>E-commerce Solutions</h3>
+        <p>Build secure, scalable online stores to grow your business.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Any questions or remarks? Just write us a message!</p>
+
+    <form>
+      <input type="email" placeholder="Enter a valid email address" required />
+      <input type="text" placeholder="Enter your Name" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="contact-info-grid">
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-running"></i></div>
+        <h3>ABOUT CLUB</h3>
+        <p>Running Guide<br>Workouts</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+        <h3>PHONE (LANDLINE)</h3>
+        <p>+912 3527 8867<br>+912 552 3386</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>OUR OFFICE LOCATION</h3>
+        <p>The Interior Design Studio Company<br>The Courtyard, Al Quoz 1, Colorado, USA</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
